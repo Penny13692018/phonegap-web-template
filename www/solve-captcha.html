@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh_TW">
-	<head>
-		<title>首頁</title>
+<head>
+<title>解驗證碼賺點數</title>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <script type="text/javascript" src="files/theme/jquery.1.9.1.min.js"></script>
-  <script type="text/javascript" src="https://www.9kw.eu/grafik/js/jquery-ui.min.js"></script>
-
-		
-		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" user-scalable=no/>
+       		
+<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
 <link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
-<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1520691969" title="wsite-theme-css" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="print,screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1518836182" title="wsite-theme-css" />
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
@@ -71,12 +67,19 @@
 .wsite-product .wsite-product-price a {}
 }</style>
 
-		<script>
+<script>
 var STATIC_BASE = '//cdn1.editmysite.com/';
 var ASSETS_BASE = '//cdn2.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 </script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="files/theme/jquery.1.9.1.min.js"></script>
+<script type="text/javascript" src="https://www.9kw.eu/grafik/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="files/theme/usecookie.js"></script>
+<span style="display: none;">
+<audio id="nextsoundplay" controls="controls"><source src="files/Beep_Short.mp3"></source>
+</audio></span>
+
 
 <script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/zh_TW/stl.js?buildTime=1234&"></script>
 <script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
@@ -86,7 +89,7 @@ var STYLE_PREFIX = 'wsite';
 	function initFlyouts(){
 		initPublishedFlyoutMenus(
 			[{"id":"281190080568332722","title":"首頁","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"610376367591272761","title":"解驗證碼賺點數","url":"solve-captcha.html","target":"","nav_menu":false,"nonclickable":false},{"id":"568530030609992357","title":"Settings (設定)","url":"settings.html","target":"","nav_menu":false,"nonclickable":false},{"id":"875251958585549568","title":"Tutor (&#20013;&#25991;&#25945;&#23416;&#65289;","url":"tutor-2001325991259452341665289.html","target":"","nav_menu":false,"nonclickable":false},{"id":"156628941440020800","title":"聯絡棉被蟲","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
-			"281190080568332722",
+			"610376367591272761",
 			'',
 			'active',
 			false,
@@ -96,10 +99,14 @@ var STYLE_PREFIX = 'wsite';
 	}
 //-->
 </script>
-		
+<script src="files/theme/jquery.dump.js"></script>
+<script src="files/theme/jquery.rotate.js"></script>
+<script src="files/theme/jquery.greyscale.js"></script>
+<script src="files/theme/jquery.rotate3Di.js"></script>
+<script src="files/theme/jquery.iframer.js"></script>
 		
 	</head>
-	<body class="header-page  wsite-page-index  sticky-nav-on full-width-off header-scroll-animate-off  wsite-theme-light"><div class="wrapper">
+	<body class="no-header-page  wsite-page-solve-captcha  sticky-nav-on full-width-off header-scroll-animate-off  wsite-theme-light" onload="getAllSettings()"><div class="wrapper">
     <div class="unite-header">
       <div class="nav-wrap">
         <div class="container">
@@ -112,7 +119,7 @@ var STYLE_PREFIX = 'wsite';
 
 </span></div>
           <div class="nav desktop-nav"><ul class="wsite-menu-default">
-		<li id="active" class="wsite-menu-item-wrap">
+		<li id="pg281190080568332722" class="wsite-menu-item-wrap">
 			<a
 						href="index.html"
 				class="wsite-menu-item"
@@ -121,7 +128,7 @@ var STYLE_PREFIX = 'wsite';
 			</a>
 			
 		</li>
-		<li id="pg610376367591272761" class="wsite-menu-item-wrap">
+		<li id="active" class="wsite-menu-item-wrap">
 			<a
 						href="solve-captcha.html"
 				class="wsite-menu-item"
@@ -164,59 +171,58 @@ var STYLE_PREFIX = 'wsite';
       </div>
     </div>
 
-    <div class="banner-wrap">
-      <div class="wsite-elements wsite-not-footer wsite-header-elements">
-	<div class="wsite-section-wrap">
-	<div  class="wsite-section wsite-header-section wsite-section-bg-color" style="height: 500px;vertical-align: bottom;background-color: #1e2330;background-image: none;is_customized: 1;" >
-		<div class="wsite-section-content">
-			
-          <div class="container">
-            <div class="banner">
-				<div class="wsite-section-elements">
-					<h2 class="wsite-content-title" style="text-align:center;">解驗證碼賺點數!</h2>
-				</div>
-			</div>
-          </div>
-      
-		</div>
-		<div class=""></div>
-	</div>
-</div>
-
-</div>
-
-    </div>
-
     <div class="main-wrap">
       <div id="wsite-content" class="wsite-elements wsite-not-footer">
 	<div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-background-1" style="height: 448px;" >
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-13" style="height: auto;background-color: #ffffff;background-image: none;" >
 		<div class="wsite-section-content">
           <div class="container">
 			<div class="wsite-section-elements">
-				<h2 class="wsite-content-title" style="text-align:center;">You can use this app to solve captcha &amp; earn 9kw credits<br /></h2>
-
-<div class="wsite-spacer" style="height:69px;"></div>
-
-<div class="paragraph" style="text-align:center;"><font color="#2a2a2a" style="letter-spacing: 0.02em; -webkit-text-size-adjust: 100%;">Go to "Settings (設定)" Page entering your apikey & earn 9kw credits in </font><font color="#000000"><span style="letter-spacing: normal; -webkit-text-size-adjust: 100%; background-color: rgba(255, 255, 255, 0);">"</span></font><font color="#2a2a2a" style="letter-spacing: 0.02em; -webkit-text-size-adjust: 100%;">解驗證碼賺點數</font><span style="text-align: center; letter-spacing: normal; -webkit-text-size-adjust: 100%; background-color: rgba(255, 255, 255, 0);"><font color="#000000">" Page</font></span><br /><font color="#2a2a2a" style="color: rgb(42, 42, 42); letter-spacing: 0.02em; -webkit-text-size-adjust: 100%;">&#40670;&#36914;"Settings (設定)" &#38913;&#38754;&#65292;&#36664;&#20837;&#24744;&#30340;9kw api key&#33287;&#20559;&#22909;&#35373;&#23450;&#65292;&#20877;&#21040;</font><font color="#000000"><span style="letter-spacing: normal; -webkit-text-size-adjust: 100%; background-color: rgba(255, 255, 255, 0);">"</span></font><font color="#2a2a2a" style="color: rgb(42, 42, 42); letter-spacing: 0.02em; -webkit-text-size-adjust: 100%;">解驗證碼賺點數</font><span style="text-align: center; letter-spacing: normal; -webkit-text-size-adjust: 100%; background-color: rgba(255, 255, 255, 0);"><font color="#000000">"</font></span><span style="color: rgb(42, 42, 42); letter-spacing: 0.02em; -webkit-text-size-adjust: 100%; background-color: transparent;">&#38913;&#38754;&#38283;&#22987;&#35299;&#27231;&#22120;&#20154;&#39511;&#35657;&#36090;&#40670;&#25976;</span></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
+				<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
 	<table class="wsite-multicol-table">
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 25px;">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
 					
 						
 
-<h2 class="wsite-content-title" style="text-align:left;"><font size="5">Multiple Options</font></h2>
+<h2 class="wsite-content-title"><font color="#2a2a2a">系統資訊</font></h2>
+
+<div><div id="980127208124999843" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="guthaben"></div></div>
+
+
+
+</div>
 
 
 					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 25px;">
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
 					
 						
 
-<h2 class="wsite-content-title"><font size="5">&#22810;&#27171;&#36984;&#38917;</font></h2>
+<div><div id="567176790983912344" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="useronline_header"></div></div>
+
+
+</div>
+
+<div><div id="567176790983912345" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="totalcaptcha"></div></div>
+
+</div>
+
+
+<div><div id="567176790983912346" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="recaptchanumber"></div></div>
+
+</div>
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div id="941159129947452025" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><div id="progressbar"><div class="progress-label"></div></div></div>
+
+
+
+</div>
 
 
 					
@@ -224,41 +230,6 @@ var STYLE_PREFIX = 'wsite';
 		</tbody>
 	</table>
 </div></div></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
-	<table class="wsite-multicol-table">
-		<tbody class="wsite-multicol-tbody">
-			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 25px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;">You can change the solving captcha setting in the Settings (設定) page. (Interactive Captcha not available yet)</div>
-
-<div class="wsite-spacer" style="height:10px;"></div>
-
-
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 25px;">
-					
-						
-
-<div class="paragraph" style="text-align:left;">&#24744;&#21487;&#20197;&#22312;&ldquo;Settings (設定)&rdquo;&#38913;&#38754;&#20462;&#25913;&#35373;&#23450;&#65292;&#38480;&#21046;&#35201;&#35299;&#30340;&#39511;&#35657;&#39006;&#22411;<br />&#30446;&#21069;Google&#30340;&ldquo;&#25105;&#19981;&#26159;&#27231;&#22120;&#20154;&rdquo;&#39511;&#35657;&#26044;&#34892;&#21205;&#29256;/&#32178;&#38913;&#29256;&#28961;&#27861;&#20351;&#29992;</div>
-
-
-					
-				</td>			</tr>
-		</tbody>
-	</table>
-</div></div></div>
-
-<div class="wsite-spacer" style="height:50px;"></div>
-
-<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-<a class="wsite-button wsite-button-small wsite-button-normal" href="settings.html" >
-<span class="wsite-button-inner">Solve Captcha Now!<br /><br />開始賺9kw點數吧!</span>
-</a>
-<div style="height: 10px; overflow: hidden;"></div></div>
 			</div>
 		</div>
       </div>
@@ -266,31 +237,33 @@ var STYLE_PREFIX = 'wsite';
 	</div>
 </div>
 <div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-background-2"  >
+	<div class="wsite-section wsite-body-section wsite-section-bg-color wsite-background-15" style="height: 423px;background-color: #ffffff;background-image: none;is_customized: 1;" >
 		<div class="wsite-section-content">
           <div class="container">
 			<div class="wsite-section-elements">
-				<h2 class="wsite-content-title" style="text-align:center;"><font size="5">Tutorial Video of the App Provided</font></h2>
-
-<div class="wsite-spacer" style="height:10px;"></div>
-
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -45px;">
+				<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
 	<table class="wsite-multicol-table">
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
-				<td class="wsite-multicol-col" style="width:50%; padding:0 45px;">
+				<td class="wsite-multicol-col" style="width:67.381974248927%; padding:0 15px;">
+					
+						
+					
+				</td>				<td class="wsite-multicol-col" style="width:32.618025751073%; padding:0 15px;">
 					
 						
 
-<div class="paragraph" style="text-align:left;">The Chinese tutorial video is provided in the "Tutor" Page.<br />If you need English tutorial, please leave message in the YouTube video.<br /></div>
+<div><div id="202393467594664587" align="center" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a class="wsite-button wsite-button-small wsite-button-highlight" id="captchastart" onclick ="play_sound()">
+<span class="wsite-button-inner"> 開始 </span>
+</a>
+<span>  </span>
+<a class="wsite-button wsite-button-small wsite-button-highlight" id="captchastop">
+<span class="wsite-button-inner"> 停止 </span>
+</a></div>
 
 
-					
-				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 45px;">
-					
-						
 
-<div class="paragraph" style="text-align:left;">&#26044;&ldquo;Tutor(&#20013;&#25991;&#25945;&#23416;)"&#38913;&#38754;&#20013;&#20134;&#25918;&#32622;&#20102;&#20013;&#25991;&#30340;&#20351;&#29992;&#25945;&#23416;&#24433;&#29255;&#12290;</div>
+</div>
 
 
 					
@@ -299,25 +272,143 @@ var STYLE_PREFIX = 'wsite';
 	</table>
 </div></div></div>
 
-<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-<a class="wsite-button wsite-button-small wsite-button-highlight" href="tutor-2001325991259452341665289.html" >
-<span class="wsite-button-inner">View Tutor<br /><br />​查看教學</span>
+<div><div id="975949075765362554" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><td width="455" height="350" valign="top">
+		<input type="button" id="captchaskipinteractive" title="Skip" value="SKIP" style="display: none;">
+		<div id="usercaptchaget">現在程式尚未啟動。<br>請按"開始"，在這裡解驗證碼~
+		<br><br>
+- 煩請小心地解驗證碼<br>
+- 煩請認真地輸入正確地驗證解答<br>
+- 拜託不要亂寫QAQ<br>
+- 解不出來的快點跳過 節省您的時間<br>
+- 不要亂搞結果弄壞程式 OTL<br>
+<br>
+
+		</div>
+		<div id="textthing" style="display: none;"></div>
+		<div id="usercaptchatext" style="display: none;"></div>
+		<div id="progressbar2" style="display: none;" class="ui-progressbar-overlay"></div>
+		<span id="imagecaptchahtml" style="display: none;"></span>
+		<span id="audiocaptchahtml" style="display: none;"></span>
+		<span id="interactivecaptchahtml" style="display: none;"><iframe src="" id="interactiveiframe" frameborder="0" scrolling="auto" class="iframe-full-height"></iframe></span>
+		<span id="puzzlecaptchahtml" style="display: none;">
+		<div id="containment-wrapper">
+		  <img src="" id="sampleimg">
+		  <div id="draggable1" class="draggable ui-widget-content"><img src="" id="draggable1img"></div>
+		  <div id="draggable2" class="draggable ui-widget-content"><img src="" id="draggable2img"></div>
+		  <div id="draggable3" class="draggable ui-widget-content"><img src="" id="draggable3img"></div>
+		  <div id="draggable4" class="draggable ui-widget-content"><img src="" id="draggable4img"></div>
+		  <div id="draggable5" class="draggable ui-widget-content"><img src="" id="draggable5img"></div>
+		  <div id="draggable6" class="draggable ui-widget-content"><img src="" id="draggable6img"></div>
+		</div>
+		</span>
+	</td></div>
+
+
+
+</div>
+
+<div><div id="873202258300453685" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><span id="confirmcaptchahtml" style="display: none;">資料: <span id="confirmcaptchadata"></span><br> <input type="button" id="captchatrue" style="background-color:#00FF00;width:115px;height:40px;" value="Correct"> <input type="button" id="captchafalse" style="background-color:#FF3333;width:115px;height:40px;" value="Wrong"><br><br></span></div>
+
+
+
+</div>
+
+<div><div id="887854370793797109" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><input type="text" id="input_text" size="20" value="" autocomplete="off" autofocus="" required=""> </div>
+
+
+
+</div>
+
+<div class="wsite-spacer" style="height:14px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:35.483870967742%; padding:0 15px;">
+					
+						
+
+<div><div id="974687851487580137" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a class="wsite-button wsite-button-small wsite-button-highlight" id="captchasend1"><span class="wsite-button-inner"> 送出 </span>	</a>
+<a class="wsite-button wsite-button-small wsite-button-highlight" id="captchasend2">
+		<span class="wsite-button-inner"> 送出+停止 </span></a></div>
+
+
+
+</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:64.516129032258%; padding:0 15px;">
+					
+						
+
+<div><div id="626583895320628472" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a class="wsite-button wsite-button-small wsite-button-highlight" id="captchaskip">
+<span class="wsite-button-inner"> 跳過 </span>
+</a> 
+
+<a class="wsite-button wsite-button-small wsite-button-highlight" id="captchasendempty" style="display: none;">
+<span class="wsite-button-inner"> 空的 </span>
 </a>
-<div style="height: 10px; overflow: hidden;"></div></div>
+</div>
 
-<div class="wsite-spacer" style="height:50px;"></div>
 
-<h2 class="wsite-content-title" style="text-align:center;">How to Use Credits Earned<br /></h2>
 
-<h2 class="wsite-content-title" style="text-align:center;">&#8203;&#20351;&#29992;&#40670;&#25976;&#26041;&#27861;&#30475;&#36889;&#35041;</h2>
+</div>
 
-<div class="paragraph" style="text-align:left;">How to use 9kw credit points you earned? Look at Comforterworm Autobot Series!<br /><br />&#36090;&#21040;&#30340;&#40670;&#25976;&#35201;&#24590;&#40636;&#20351;&#29992;&#65311;&#26825;&#34987;&#34802;&#30340;&#32178;&#31449;&#26377;&#21508;&#31278;&#20813;&#36027;&#27604;&#29305;&#24163;&#27231;&#22120;&#20154;&#20379;&#24744;&#20351;&#29992;&#65281;</div>
 
-<div style="text-align:center;"><div style="height: 10px; overflow: hidden;"></div>
-<a class="wsite-button wsite-button-small wsite-button-highlight" href="https://comforterworm.weebly.com" target="_blank">
-<span class="wsite-button-inner">按此進入棉被蟲網站<br /><br />​Click Here to Website</span>
-</a>
-<div style="height: 10px; overflow: hidden;"></div></div>
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:29px;"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div id="611134042281029503" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a class="wsite-button wsite-button-small wsite-button-highlight" onclick="$('#userhistory').show();$('#usertop').hide();$('#userlog').hide();" id="historyname">
+<span class="wsite-button-inner"> 解驗證碼記錄 </span>
+</a></div>
+
+
+
+</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
+					
+						
+
+<div><div id="568662590735333757" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><a class="wsite-button wsite-button-small wsite-button-highlight" onclick="$('#userhistory').hide();$('#usertop').hide();$('#userlog').show();" id="logname">
+<span class="wsite-button-inner"> 系統錯誤記錄 </span>
+</a></div>
+
+
+
+</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div id="187812997517476108" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><!-- NOAPP --><div id="userhistory" style="width:222px; height:168px;overflow:auto;"></div><div id="usertop" style="width:222px; height:168px;overflow:auto;display: none;"></div><div id="userlog" style="width:222px; height:168px;overflow:auto;display: none;">沒記錄</div><!-- NOAPP --></div>
+
+
+
+</div>
+
+<div class="paragraph"><font color="#555555"><strong>記錄訊息說明</strong></font><br /><font color="00FF00">OK</font><span style="color:rgb(85, 85, 85)">&nbsp;(綠色):<br />您解的是正確的!</span><br /><font color="FF3333">Not</font><span style="color:rgb(85, 85, 85)">&nbsp;(紅色):<br />您解的驗證碼錯誤，拿不到點數QQ</span><br /><span style="color:rgb(85, 85, 85)">? (黑色):<br />&#8203;狀態不明，點數先給您(錯誤會收回)</span></div>
 			</div>
 		</div>
       </div>
@@ -334,7 +425,7 @@ var STYLE_PREFIX = 'wsite';
   <div class="nav mobile-nav">
     <label class="hamburger"><span></span></label>
     <ul class="wsite-menu-default">
-    		<li id="active" class="wsite-menu-item-wrap">
+    		<li id="pg281190080568332722" class="wsite-menu-item-wrap">
     			<a
     						href="index.html"
     				class="wsite-menu-item"
@@ -343,7 +434,7 @@ var STYLE_PREFIX = 'wsite';
     			</a>
     			
     		</li>
-    		<li id="pg610376367591272761" class="wsite-menu-item-wrap">
+    		<li id="active" class="wsite-menu-item-wrap">
     			<a
     						href="solve-captcha.html"
     				class="wsite-menu-item"
@@ -382,6 +473,7 @@ var STYLE_PREFIX = 'wsite';
     </ul>
   </div>
 
+
   <script>
     (function(d) {
       var config = {
@@ -392,10 +484,40 @@ var STYLE_PREFIX = 'wsite';
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-	
-	<script type="text/javascript" src="files/theme/plugins.js"></script>
-	<script type="text/javascript" src="files/theme/custom.js"></script>
-   
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+  <script type="text/javascript" src="files/theme/9kw.js"></script>
+  
+  <script type="text/javascript" src="files/theme/getAllSettings.js"></script> 
+  
+  <form style="display: none">	
+	<span id="apikey"> </span>
+	<span id="zoomdata"></span>
+	flip<input id="flip" name="flip" value="1" __flip__="" type="checkbox">
+	mirror<input id="mirror" name="mirror" value="1" __mirror__="" type="checkbox">
+	sound<input id="sound" name="sound" value="1" __sound__="" type="checkbox">
+	vibration<input id="vibration" name="vibration" value="1" __vibration__="" type="checkbox">
+	refresh<input id="refresh" name="refresh" value="1" __refresh__="" type="checkbox">
+	autostart<input id="autostart" name="autostart" value="1" __autostart__="" type="checkbox">
+	grau<input id="grau" name="grau" value="1" __grau__="" type="checkbox">
+	desktopinfo<input id="desktopinfo" name="desktopinfo" value="1" __desktopinfo__="" type="checkbox">
+	speed<input id="speed" name="speed" value="1" __speed__="" type="checkbox">	
+	<span id="speedlevel"></span>
+	<span id="widthc"></span>
+	<span id="heightc"></span>
+	textcaptcha<input id="textcaptcha" name="textcaptcha" value="1" __textcaptcha__="" type="checkbox">
+	mousecaptcha<input id="mousecaptcha" name="mousecaptcha" value="1" __mousecaptcha__="" type="checkbox">
+	multimousecaptcha<input id="multimousecaptcha" name="multimousecaptcha" value="1" __multimousecaptcha__="" type="checkbox">
+	audiocaptcha<input id="audiocaptcha" name="audiocaptcha" value="1" __audiocaptcha__="" type="checkbox">
+	rotatecaptcha<input id="rotatecaptcha"name="rotatecaptcha" value="1" __rotatecaptcha__="" type="checkbox">
+	puzzlecaptcha<input id="puzzlecaptcha"name="puzzlecaptcha" value="1" __puzzlecaptcha__="" type="checkbox">
+	textonlycaptcha<input id="textonlycaptcha"name="textonlycaptcha" value="1" __textonlycaptcha__="" type="checkbox">
+	confirmcaptcha<input id="confirmcaptcha"name="confirmcaptcha" value="1" __confirmcaptcha__="" type="checkbox">
+	interactivecaptcha<input id="interactivecaptcha"name="interactivecaptcha" value="1" __interactivecaptcha__="" type="checkbox">
+	rc2audio<input id="rc2audio" name="rc2audio" value="1" __rc2audio__="" type="checkbox">
+	startpre<input id="startpre" name="startpre" value="1" __startpre__="" type="checkbox">	
+  </form>
 
 		
 	</body>
